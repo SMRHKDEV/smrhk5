@@ -3,7 +3,7 @@ import { Avatar, AvatarGroup, Box, Button, Chip, Typography } from "@mui/materia
 
 export default function ProductsBox() {
     return (
-        <MyGrid xs={12} md={5} lg={4} pl={'24px'}>
+        <MyGrid xs={12} md={5} lg={4} pl={{ sm: '0', md: '24px' }}>
             <Box component={'div'} className="product-box">
                 <Typography variant="h5">
                     بهترین انتخاب محصول
