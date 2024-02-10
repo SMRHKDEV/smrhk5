@@ -1,0 +1,91 @@
+.comment {
+    padding: 35px 0;
+
+    h4 {
+        background: linear-gradient(90deg, #0ea5ea, #0bd1d1 51%, #0ea5ea) var(--x, 0)/200%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+
+    p.txt-title {
+        font-size: 0.88rem;
+        line-height: 28px;
+        max-width: 960px;
+        padding: 0 26px;
+        margin: 0 auto 50px;
+    }
+
+    .comment-slider {
+
+        .comment-slider-item {
+            max-width: 350px;
+            margin: 13px auto;
+            height: 225px;
+            overflow: hidden;
+            position: relative;
+            padding: 30px 24px 50px;
+            border-radius: 16px;
+            border: 1px solid #222f43;
+            transform: translateY(0);
+            cursor: pointer;
+            transition: transform .25s cubic-bezier(.02, .01, .47, 1);
+
+            &:hover {
+                transform: translateY(-3px);
+                transition: transform .25s cubic-bezier(.02, .01, .47, 1);
+            }
+
+            .txt {
+                color: #94a9c9;
+                font-size: 0.8rem;
+                line-height: 26px;
+            }
+
+            div {
+                h6 {
+                    color: #66768f;
+                    font-size: 0.9rem;
+                    font-weight: 600;
+                    margin-bottom: 3px;
+                }
+
+                p {
+                    color: #66768f;
+                    font-size: 0.8rem;
+                }
+
+                span {
+                    height: 48px;
+                    width: 48px;
+                    background-color: #0b1222;
+                    margin-left: 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50px;
+
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+
+            .logo {
+                position: absolute;
+                bottom: 8px;
+                left: 10px;
+                transform: rotate(147deg) scaleX(-1);
+
+                svg {
+                    width: 57px;
+                    height: 57px;
+                    color: #7f92b0;
+                    opacity: 0.2;
+                }
+            }
+        }
+    }
+}

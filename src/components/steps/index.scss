@@ -1,0 +1,10 @@
+.steps {
+    padding-top: 85px;
+    padding-bottom: 65px;
+}
+
+@media (max-width: 1200px) {
+    .steps {
+        padding-bottom: 0px;
+    }
+}

@@ -1,0 +1,46 @@
+.banner {
+    padding: 165px 0 65px;
+
+    .mybanner {
+        position: relative;
+        background-color: #131c31;
+        border: 1px solid #222f43;
+        border-radius: 8px;
+        padding: 26px 26px 26px 300px;
+
+        img {
+            position: absolute;
+            bottom: 0;
+            left: 18px;
+            max-width: 100%;
+            width: auto;
+            max-height: 385px;
+        }
+
+        .mybanner-txt {
+            p {
+                color: #94a9c9;
+                font-size: 0.85rem;
+                line-height: 27px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .banner .mybanner img {
+        position: static;
+        margin: auto;
+        height: auto;
+    }
+
+    .banner {
+        padding-top: 35px;
+    }
+
+    .banner .mybanner {
+        padding: 18px;
+        text-align: center;
+    }
+}

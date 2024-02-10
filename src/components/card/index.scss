@@ -1,0 +1,204 @@
+.card-section {
+    padding: 85px 0;
+    overflow: hidden;
+    position: relative;
+
+    &::after {
+        content: "";
+        height: 500px;
+        width: 500px;
+        z-index: 1;
+        position: absolute;
+        background: url('/images/header-bg-02.svg') no-repeat 100% 0;
+        background-size: contain;
+        right: -165px;
+        bottom: 0px;
+    }
+
+
+    .card-section-info {
+        position: relative;
+        z-index: 555;
+
+        h5 {
+            color: #b9e0f2;
+            font-weight: 800;
+            margin-bottom: 26px;
+            font-size: 1.55rem;
+
+            svg {
+                width: 26px;
+                height: 26px;
+                margin-left: 8px;
+            }
+        }
+
+        p {
+            color: #94a9c9;
+            font-size: 0.9rem;
+            line-height: 30px;
+            padding-bottom: 50px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #222f43;
+        }
+
+        div {
+            button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: nowrap;
+                background-color: #131c31;
+                margin-left: 10px;
+                border-radius: 8px;
+                font-size: 0.75rem;
+                padding: 12px 20px;
+                color: #fff;
+                line-height: 18px;
+                border: 1px solid #222f43;
+                transition: box-shadow .25s cubic-bezier(.02, .01, .47, 1), border-color .25s cubic-bezier(.02, .01, .47, 1);
+
+                &:hover {
+                    border-color: #0bd1d1;
+                    box-shadow: 0 3px 15px rgba(11, 209, 209, 0.2);
+                    transition: box-shadow .25s cubic-bezier(.02, .01, .47, 1), border-color .25s cubic-bezier(.02, .01, .47, 1);
+                }
+
+                svg {
+                    width: 16px;
+                    height: 16px;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+
+    .vip-card {
+        position: relative;
+        z-index: 555;
+        border-radius: 16px;
+        padding: 25px;
+        position: relative;
+        border: 1px solid #222f43;
+        background-color: #131c31;
+        position: relative;
+        transition: background-color .25s cubic-bezier(.02, .01, .47, 1), border-color .25s cubic-bezier(.02, .01, .47, 1);
+
+        &:hover {
+            border-color: #66768f !important;
+            background-color: transparent;
+            transition: background-color .25s cubic-bezier(.02, .01, .47, 1), border-color .25s cubic-bezier(.02, .01, .47, 1);
+        }
+
+        .mychip {
+            position: absolute;
+            top: 0;
+            left: 18px;
+            top: -15px;
+            left: 22px;
+            animation: tilt-shaking 0.65s infinite;
+        }
+
+        .vip-card-header {
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #222f43;
+
+            h5 {
+                font-weight: 800;
+                font-size: 1.3rem;
+                color: #b9e0f2;
+                margin-bottom: 10px;
+            }
+
+            span {
+                display: block;
+                margin-bottom: 15px;
+                color: #94a9c9;
+                font-size: 0.8rem;
+            }
+
+            p {
+                margin-bottom: 24px;
+                color: #94a9c9;
+                font-size: 0.9rem;
+                line-height: 26px;
+                text-align: justify;
+            }
+
+            a {
+                border: 2px solid #0ea5ea;
+                border-radius: 50px;
+                color: #fff;
+                padding: 8px 18px;
+                font-size: 0.8rem;
+            }
+        }
+
+        .vip-card-list {
+            h6 {
+                margin-bottom: 13px;
+                color: #b9e0f2;
+                font-size: 0.97rem;
+            }
+
+            ul {
+                padding-right: 14px;
+                margin: 0;
+
+                li {
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: nowrap;
+                    color: #94a9c9;
+                    font-size: 0.95rem;
+                    margin-bottom: 13px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    svg {
+                        width: 18px;
+                        height: 18px;
+                        margin-left: 5px;
+                        color: #0ea5ea;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .card-section-info {
+        margin-bottom: 32px;
+        padding: 8px !important;
+
+        &>div {
+            flex-wrap: wrap;
+        }
+    }
+
+    .card-section .vip-card {
+        margin-bottom: 24px;
+    }
+
+    .card-section {
+        padding: 35px 0;
+    }
+
+    .card-section .card-section-info div button {
+        margin-bottom: 13px !important;
+    }
+}
+
+@media (max-width: 350px) {
+    .card-section {
+
+        &::after {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'sans';
+    src: url('/fonts/IRANSansWeb.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'sans';
+    background-color: #0f172a;
+    color: #94a9c9;
+}
+
+// ******************************
+.not-found-page {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h2 {
+        font-family: 'sans';
+        font-weight: 800;
+    }
+
+    a {
+        font-family: 'sans';
+    }
+}
+
+// ******************************
+// Animation
+
+@keyframes hero-thumb-animation {
+    0% {
+        transform: translateY(-20px)
+    }
+
+    to {
+        transform: translateY(0)
+    }
+}
+
+@keyframes hero-thumb-sm-animation {
+    0% {
+        transform: translateY(-20px) translateX(50px)
+    }
+
+    to {
+        transform: translateY(-20px) translateX(0)
+    }
+}
+
+@keyframes tilt-shaking {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(0eg);
+    }
+
+    75% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+// ******************************

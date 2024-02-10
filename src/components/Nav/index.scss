@@ -1,0 +1,22 @@
+.mynav {
+    position: fixed;
+    bottom: 12px;
+    right: 100px;
+    z-index: 99999;
+
+    a {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        background-color: #0b1222;
+        border-radius: 50px;
+
+        svg {
+            color: #94a9c9;
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
