@@ -1,14 +1,9 @@
 import { Box, Container, Step, StepLabel, Stepper } from '@mui/material';
 import './index.scss';
+import siteDatas from '@/assets/datas';
 
 export default function Steps() {
-
-    const steps = [
-        'انتخاب محصول مورد نظر',
-        'ارتباط با مشاوران ما و ثبت سفارش محصول',
-        'ارسل رایگان محصول',
-        'دریافت محصول درب منزل'
-    ];
+    const { steps } = siteDatas()
     return (
         <Box component={'section'} className='steps'>
             <Container>

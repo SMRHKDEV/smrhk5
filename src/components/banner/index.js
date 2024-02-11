@@ -1,29 +1,28 @@
-import { Box, Typography } from "@mui/material";
-import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import Image from "next/image";
-import './index.scss';
+import { Box, Typography } from "@mui/material";
 import MyContainer from "@/helper/MyContainer";
+import MyGrid from "@/helper/MyGrid";
+import siteDatas from "@/assets/datas";
+
+import './index.scss';
 
 
 export default function Banner() {
+    const { bannerTxt1, bannerTxt2 } = siteDatas();
     return (
         <Box component={'section'} className="banner">
             <MyContainer>
-                <Grid container>
-                    <Grid xs={12}>
+                <MyGrid container>
+                    <MyGrid xs={12}>
                         <Box component={'div'} className="mybanner">
                             <Image src={'/images/banner.png'} width={327} height={490} alt="تصویر" priority={true} />
                             <Box component={'div'} className="mybanner-txt">
-                                <Typography variant="inherit">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد
-                                </Typography>
-                                <Typography variant="inherit">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد
-                                </Typography>
+                                <Typography variant="inherit">{bannerTxt1}</Typography>
+                                <Typography variant="inherit">{bannerTxt2}</Typography>
                             </Box>
                         </Box>
-                    </Grid>
-                </Grid>
+                    </MyGrid>
+                </MyGrid>
             </MyContainer>
         </Box>
     )

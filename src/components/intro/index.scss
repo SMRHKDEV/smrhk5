@@ -25,6 +25,8 @@
         border-radius: 20px;
         background-color: #131c31;
 
+
+
         .intro-item {
             display: flex;
             flex-wrap: nowrap;
@@ -67,6 +69,23 @@
                 font-size: 0.78rem;
                 line-height: 18px;
             }
+
+            // &:nth-child(5) {
+            //     margin-bottom: 0;
+            // }
+
+            &:last-child {
+                margin: 0;
+            }
         }
     }
+}
+
+@media (min-width: 600px) {
+    .intro-box .intro-item {
+        &:nth-child(5) {
+            margin-bottom: 0px;
+        }
+    }
+
 }
